@@ -1,0 +1,16 @@
+PODS:
+  - ErrorUtilities (2.1.2)
+
+DEPENDENCIES:
+  - ErrorUtilities (from `../`)
+
+EXTERNAL SOURCES:
+  ErrorUtilities:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ErrorUtilities: 1d46b5be7c3e8c1518297f54d1a5178c0f1de252
+
+PODFILE CHECKSUM: 63e280c7c6eb0e453fb762522443b89873635718
+
+COCOAPODS: 1.3.1

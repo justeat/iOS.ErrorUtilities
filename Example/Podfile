@@ -1,0 +1,11 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'ErrorUtilities_Example' do
+  pod 'ErrorUtilities', :path => '../'
+
+  target 'ErrorUtilities_Tests' do
+    inherit! :search_paths
+
+  end
+end
