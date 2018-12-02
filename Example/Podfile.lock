@@ -1,16 +1,16 @@
 PODS:
-  - ErrorUtilities (2.1.3)
+  - ErrorUtilities (2.2.0)
 
 DEPENDENCIES:
   - ErrorUtilities (from `../`)
 
 EXTERNAL SOURCES:
   ErrorUtilities:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  ErrorUtilities: f6c1bdd6d9a0ae6974875f200c12b98ddec40188
+  ErrorUtilities: 05b2e1a86d059d677bea2911979d1f13144da91a
 
 PODFILE CHECKSUM: 63e280c7c6eb0e453fb762522443b89873635718
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
