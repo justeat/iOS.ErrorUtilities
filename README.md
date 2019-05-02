@@ -10,16 +10,12 @@ Just Eat collection of Error related utility, documentation [here](https://tech.
 
 ## Requirements
 
-- Swift 4
-- xCode 9.x
+- Swift 5+
+- Xcode 10.2+
 
 ## Installation
 
 **NOTE: This code has been published as a JUST EAT Private POD, not available in the public Cocoapods repository, if you want to use it please fork this project.**
-
-## Author
-
-federico.cappelli@just-eat.com
 
 ## License
 
