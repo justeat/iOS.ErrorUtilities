@@ -26,9 +26,13 @@ platform :ios do
     $code_coverage_output_dir = "./code_coverage"
     $codecov_token = "<codecov.io_token>"
     $local_podspec_repo_name = "global"
+
     if ENV['BITRISE_GIT_BRANCH']
       $branch_name = ENV['BITRISE_GIT_BRANCH']
     end
+
+    $xcode_version_filepath = '../.xcode-version'
+    set_xcode_version
   end
 
   desc "Run all the Unit Test"
@@ -152,30 +156,18 @@ platform :ios do
       )
   end
 
-  # Only post messages on HipChat if the process is run from a CI
-  def should_post_message
-    return !ENV["HIPCHAT_API_TOKEN"].nil? && is_ci?
-  end
-
-  # Posts a message on HipChat with details about the performed operations
-  def notify_hipchat(success = true, error_message)
-  
-  return unless should_post_message
-  if success
-      message = "#{$pod_name} version #{newVersion} released"
-  else
-      message = "#{$pod_name} version #{newVersion} release failed: #{error_message}"
-  end
-  hipchat(message: message, channel: ENV["HIPCHAT_CHANNEL"], success: success)
-  end
-
-  after_all do |lane|
-    # This block is called, only if the executed lane was successful
-    notify_hipchat(true)
-  end
-
-  error do |lane, exception|
-    notify_hipchat(false, exception)
+  def set_xcode_version
+    if File.exist?($xcode_version_filepath)
+      xcode_version = File.read($xcode_version_filepath)
+      UI.message "Using xcode version from file: #{xcode_version}"
+      xcversion(version: xcode_version)
+    elsif ENV.has_key?('XCODE_VERSION')
+      xcode_version = ENV['XCODE_VERSION']
+      UI.message "Using xcode version from env: #{xcode_version}"
+      xcversion(version: xcode_version)
+    else
+      UI.message "No .xcode-version file found in fastlane folder or env var. Using default Xcode version of "
+    end
   end
 end
 
