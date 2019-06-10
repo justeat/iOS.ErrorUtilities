@@ -17,7 +17,7 @@ Temporary pod containing all the utilities and protocols related to the error ha
 
   s.homepage         = 'https://github.com/justeat/iOS.ErrorUtilities'
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
-  s.authors          = { 'Just Eat iOS team' => 'justeat.ios.team@gmail.com', 'Federico Cappelli' => 'federico.cappelli@just-eat.com', 'Alberto De Bortoli' => 'alberto.debortoli@just-eat.com' }
+  s.authors          = { 'Federico Cappelli' => 'federico.cappelli@just-eat.com', 'Alberto De Bortoli' => 'alberto.debortoli@just-eat.com' }
   s.source           = { :git => 'git@github.com:justeat/iOS.ErrorUtilities.git', :tag => s.version.to_s }
   
   s.swift_version = '5.0'
