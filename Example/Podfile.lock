@@ -1,5 +1,5 @@
 PODS:
-  - ErrorUtilities (3.0.0)
+  - ErrorUtilities (3.0.1)
 
 DEPENDENCIES:
   - ErrorUtilities (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ErrorUtilities: da1f9a5dba336d71591c273ce7c7acbdeac6e899
+  ErrorUtilities: 718879968276827663ba938028e48ca09d92f6c7
 
 PODFILE CHECKSUM: bfb5689437131c703b02df87fab0f3f7120f06a0
 
