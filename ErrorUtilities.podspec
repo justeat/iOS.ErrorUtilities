@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ErrorUtilities'
-  s.version          = '3.0.1'
+  s.version          = '4.0.0'
   s.summary          = 'Errors utilities and protocols'
 
   s.description      = <<-DESC
@@ -18,7 +18,7 @@ Temporary pod containing all the utilities and protocols related to the error ha
   s.homepage         = 'https://github.com/justeat/iOS.ErrorUtilities'
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.authors          = { 'Federico Cappelli' => 'federico.cappelli@just-eat.com', 'Alberto De Bortoli' => 'alberto.debortoli@just-eat.com' }
-  s.source           = { :git => 'git@github.com:justeat/iOS.ErrorUtilities.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/justeat/iOS.ErrorUtilities.git', :tag => s.version.to_s }
   
   s.swift_version = '5.0'
   s.ios.deployment_target = '9.0'
