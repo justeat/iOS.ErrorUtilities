@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ErrorUtilities'
-  s.version          = '3.0.2'
+  s.version          = '3.0.3'
   s.summary          = 'Errors utilities and protocols'
 
   s.description      = <<-DESC
