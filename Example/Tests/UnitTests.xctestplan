@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "E8820331-37B6-47B0-B5B8-5E7FED0F86D4",
+      "name" : "Default",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ErrorUtilities.xcodeproj",
+      "identifier" : "607FACCF1AFB9204008FA782",
+      "name" : "ErrorUtilities_Example"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:ErrorUtilities.xcodeproj",
+        "identifier" : "607FACE41AFB9204008FA782",
+        "name" : "ErrorUtilities_Tests"
+      }
+    }
+  ],
+  "version" : 1
+}

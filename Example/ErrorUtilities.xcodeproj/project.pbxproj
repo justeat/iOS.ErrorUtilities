@@ -34,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		222807DE4C5B97C05DDCDBC0 /* Pods-ErrorUtilities_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErrorUtilities_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ErrorUtilities_Example/Pods-ErrorUtilities_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4F7E258026CD2DA3001F66F7 /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
 		4F945BD41F542ED200789EEE /* ErrorUtilities_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ErrorUtilities_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F945BD51F542ED200789EEE /* NSErrorExtensionConsumption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSErrorExtensionConsumption.h; sourceTree = "<group>"; };
 		4F945BD61F542ED200789EEE /* NSErrorExtensionConsumption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSErrorExtensionConsumption.m; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				4F7E258026CD2DA3001F66F7 /* UnitTests.xctestplan */,
 				4FBD993E1F543448003D2982 /* NSError_ReadabilityTests.swift */,
 				607FACEB1AFB9204008FA782 /* NSError+ChainingTests.swift */,
 				4FFE2C4C1F62D11400ABA2C2 /* NSError+HTTPTests.swift */,
@@ -235,12 +237,10 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = ZKPN288GRK;
 						LastSwiftMigration = 1010;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = ZKPN288GRK;
 						LastSwiftMigration = 1010;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -512,7 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = ZKPN288GRK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ErrorUtilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -530,7 +530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = ZKPN288GRK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ErrorUtilities/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -546,7 +546,8 @@
 			baseConfigurationReference = 5DCA3C5B2A934136FF52DEEC /* Pods-ErrorUtilities_Tests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = ZKPN288GRK;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -570,7 +571,8 @@
 			baseConfigurationReference = B6546C93ED17F51AD6AD0DE3 /* Pods-ErrorUtilities_Tests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = ZKPN288GRK;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
