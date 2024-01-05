@@ -1,5 +1,7 @@
 # ErrorUtilities
 
+### Warning: This library is not supported by Just Eat Takeaway anymore and therefore considered deprecated. The repository has been archived.
+
 [![Build Status](https://travis-ci.org/justeat/iOS.ErrorUtilities.svg?branch=master)](https://travis-ci.org/justeat/iOS.ErrorUtilities)
 
 ## Description
